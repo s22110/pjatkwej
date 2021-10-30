@@ -1,6 +1,13 @@
 package pl.edu.pjatk.pjatkwej.Models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Ingredient")
 public class Ingredient {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private int calories;

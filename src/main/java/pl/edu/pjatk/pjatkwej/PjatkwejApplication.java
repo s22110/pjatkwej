@@ -9,5 +9,4 @@ public class PjatkwejApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PjatkwejApplication.class, args);
 	}
-
 }
