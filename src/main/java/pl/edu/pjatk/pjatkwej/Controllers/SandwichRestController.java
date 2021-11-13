@@ -33,4 +33,10 @@ public class SandwichRestController {
         Sandwich superSandwich = sandwichService.prepareSandwich("Super Sandwich");
         return ResponseEntity.ok(superSandwich);
     }
+
+    @GetMapping("/topfive")
+    public ResponseEntity<List<Sandwich>> getTopFiveSandwiches(){
+        var topFive = sandwichService.getTopFive();
+        return ResponseEntity.ok(topFive);
+    }
 }

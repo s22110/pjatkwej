@@ -13,7 +13,7 @@ public class Sandwich {
     private String name;
     private int baseCalories;
     private double basePrice;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Ingredient> ingredients;
     private SandwichSize size;
 
